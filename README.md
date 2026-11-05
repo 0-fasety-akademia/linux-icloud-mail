@@ -1,6 +1,6 @@
 # Linux iCloud Mail
 
-**Version 0.1.5 (2026-11-04)**
+**Version 0.1.7 (2026-11-05)**
 
 A fast, native iCloud Mail client for Ubuntu, built with GTK 4 and libadwaita.
 Instead of wrapping the heavy icloud.com web app, it talks to iCloud Mail
@@ -10,10 +10,12 @@ very large mailboxes.
 ## Features
 
 - Native GTK 4 / libadwaita window: mailboxes sidebar, message list, reader
+- Double-click (or Enter) opens a message in its own window with all actions
 - Instant start: message headers are cached locally, only changes are fetched
 - Recent messages are prefetched in the background, so most open instantly
 - Push for new mail (IMAP IDLE), no polling delay
-- Desktop notifications for new mail; clicking one opens the message
+- Desktop notifications for new mail; clicking one opens the message and marks it as read
+- Notifications disappear automatically when the message is read, moved or deleted (also on iPhone / icloud.com)
 - Tray icon; closing the window minimizes the app to the tray
 - Right-click the tray icon → **Quit** to close the app
 - Unread counter on the tray icon and on the Ubuntu Dock icon
@@ -47,6 +49,8 @@ very large mailboxes.
 
 ## Changes
 
+- **0.1.7** – double-click / Enter opens a message in a separate window; remote images in quoted text are blocked in the composer too
+- **0.1.6** – clicked notifications are removed from GNOME and the message is marked as read (tray / dock counter updates); notifications also vanish when a message is read, moved or deleted anywhere
 - **0.1.5** – clicking a GNOME notification now opens that message (also from the tray / another folder)
 - **0.1.4** – "Download All" saves directly to Downloads (no folder dialog) with an "Open Folder" button; fixed national-character file names and sizes of attachments in large messages
 - **0.1.3** – alias detection also from the To/Cc field and from Received headers (no setup needed)
@@ -62,7 +66,7 @@ very large mailboxes.
 ## Installation
 
 ```bash
-sudo apt install ./linux-icloud-mail_0.1.5_all.deb
+sudo apt install ./linux-icloud-mail_0.1.7_all.deb
 ```
 
 Start **Linux iCloud Mail** from the app grid, or run `linux-icloud-mail` in a
