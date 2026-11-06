@@ -1,6 +1,6 @@
 # Linux iCloud Mail
 
-**Version 0.1.7 (2026-11-05)**
+**Version 0.1.8 (2026-11-06)**
 
 A fast, native iCloud Mail client for Ubuntu, built with GTK 4 and libadwaita.
 Instead of wrapping the heavy icloud.com web app, it talks to iCloud Mail
@@ -49,6 +49,7 @@ very large mailboxes.
 
 ## Changes
 
+- **0.1.8** – credits "Created by: JGu / Supported by Claude" in About and in the sidebar
 - **0.1.7** – double-click / Enter opens a message in a separate window; remote images in quoted text are blocked in the composer too
 - **0.1.6** – clicked notifications are removed from GNOME and the message is marked as read (tray / dock counter updates); notifications also vanish when a message is read, moved or deleted anywhere
 - **0.1.5** – clicking a GNOME notification now opens that message (also from the tray / another folder)
@@ -66,7 +67,7 @@ very large mailboxes.
 ## Installation
 
 ```bash
-sudo apt install ./linux-icloud-mail_0.1.7_all.deb
+sudo apt install ./linux-icloud-mail_0.1.8_all.deb
 ```
 
 Start **Linux iCloud Mail** from the app grid, or run `linux-icloud-mail` in a
@@ -108,4 +109,5 @@ modified versions is not permitted. See [LICENSE](LICENSE).
 
 iCloud is a trademark of Apple Inc. This project is not affiliated with Apple.
 
-Created with [Claude](https://claude.ai) (Anthropic).
+Created by: JGu  
+Supported by Claude
