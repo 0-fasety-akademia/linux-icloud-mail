@@ -1,6 +1,6 @@
 # Linux iCloud Mail
 
-**Version 0.1.8 (2026-11-06)**
+**Version 0.1.9 (2026-11-06)**
 
 A fast, native iCloud Mail client for Ubuntu, built with GTK 4 and libadwaita.
 Instead of wrapping the heavy icloud.com web app, it talks to iCloud Mail
@@ -38,6 +38,7 @@ very large mailboxes.
 - Right-click menu on messages with the 3 most recently used folders for "Move to…"
 - Instant local filtering while typing in search; press Enter for full-text search on the server
 - Filters: all, unread, flagged, with attachments
+- Group by sender: one row per sender with a message counter; expand to see the rest, "Select All from Sender" for bulk actions
 - Remote images blocked by default for privacy (one-click load, or allow always in Preferences)
 - Safe message rendering: scripts never run, links open in your browser
 - Print, save as .eml, view source, zoom
@@ -49,6 +50,7 @@ very large mailboxes.
 
 ## Changes
 
+- **0.1.9** – group messages by sender (filter menu → Group by Sender)
 - **0.1.8** – credits "Created by: JGu / Supported by Claude" in About and in the sidebar
 - **0.1.7** – double-click / Enter opens a message in a separate window; remote images in quoted text are blocked in the composer too
 - **0.1.6** – clicked notifications are removed from GNOME and the message is marked as read (tray / dock counter updates); notifications also vanish when a message is read, moved or deleted anywhere
@@ -67,7 +69,7 @@ very large mailboxes.
 ## Installation
 
 ```bash
-sudo apt install ./linux-icloud-mail_0.1.8_all.deb
+sudo apt install ./linux-icloud-mail_0.1.9_all.deb
 ```
 
 Start **Linux iCloud Mail** from the app grid, or run `linux-icloud-mail` in a
